@@ -1,0 +1,410 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+   
+    font-family: 'Roboto', sans-serif;
+}
+
+.general {
+    min-height: 100vh;
+}
+
+body {
+    height:100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #52ACFF;
+    background-image: linear-gradient(320deg, #52ACFF 25%, #FFE32C 100%);
+}
+
+.navbar {
+    left: 0;
+    right: 0;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+.navbar_ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar_ul li { 
+    font-weight: 600;
+    padding: 1em;
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar_ul li {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 0.4em;
+        
+    }
+}
+
+nav li:hover{
+    transition: all 0.2s linear;
+    background-color: rgb(247, 247, 247);
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px; 
+    cursor: pointer;
+}
+
+.navbar_ul li {
+    display: flex;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.container_world{
+    display: flex;
+    justify-content: center;
+}
+
+img {max-width:100%;}
+
+.container_world_text {
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    font-size: 2.3em;
+    font-weight: 600; 
+}
+
+.video_container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video_container_text_right{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    text-align:end ;
+    margin-right: 4em;
+    margin-top: 2.5em;
+}
+
+.video_container_text_left{
+    margin-left: 4em;
+    margin-top: 2.5em;
+    top: 5px;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    text-align: start;
+}
+
+footer {
+    
+    background-color:rgb(245, 245, 245);
+    border: black 2px solid;
+    border-radius: 5px;
+    font-size: 1.6em;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+.footer_socials_icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.footer_media_icons_ul {
+    list-style: none;
+    align-items: center;
+}
+
+.footer_media_icons_ul li {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.footer_media_icons img:hover {
+    transition: all 0.2s linear;
+    background-color: rgb(247, 247, 247);
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px; 
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.back_to_top:hover{
+    transition: all 0.2s linear;
+    background-color: rgb(247, 247, 247);
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px; 
+    cursor: pointer;
+    padding: 20px;
+    background-color:cyan;
+}
+
+.bio_page p {
+    margin : 5% 10%;
+    font-size: 18px;
+}
+
+.biography_img{
+    display:flex;
+    width: 326px;
+    height: 200px;
+}
+
+.bio_header{
+    margin-top : 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.biography h3 {
+    margin-top: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.biography h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+div.menu{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 1.3em;
+    border: 2px solid black;
+    
+}
+
+.biography .text_and_image_right img{
+    margin: 2%;
+    margin-top: 0px;
+    float:right;
+}
+
+.biography .text_and_image_left img{
+    margin: 2%;
+    float:left;
+}
+
+.justify{
+    text-align:justify;
+}
+
+.discography_title{
+    margin-top:100px;
+    justify-content: center;
+    text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8e0e0;
+    border: 3px solid black;
+}
+
+td {
+    border: 3px solid black;
+    padding: 0;
+    margin: 0;
+    text-align:center;
+    width: 250px;
+    height: auto;
+    vertical-align: middle;
+    font-size: 1.6em;
+    font-weight: 600;
+
+}
+
+td img {
+    display: block;
+   
+}
+
+.bio_page{
+    font-weight: 600;
+}
+
+.menu {
+    text-align: center;
+    color: red;
+}
+
+.menu ol li {
+    margin-top: 10px;
+    list-style-position: inside;
+}
+
+.Syd_Barrett {
+    margin-top: 100px;
+    display: flex;
+}
+
+.David_Gilmour {
+    display: flex;
+}
+
+.Bob_Klose{
+    display: flex;
+}
+
+.Nick_Mason{
+    display:flex;
+}
+
+.Roger_Waters{
+    display:flex;
+}
+
+.Richard_Wright{
+    display:flex;
+}
+
+.members_page{
+    font-weight: 600;
+}
+
+.bio_header  h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-self: center;
+}
+
+.members_page div{
+    margin:100px;
+    display: block;
+}
+
+.members_page h2{
+    text-align: center;
+}
+
+.members_page img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.members_page p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 769px) {
+    .video_container_text_left { 
+       font-size: 4vw; 
+    }
+
+    .video_container_text_right { 
+        margin-right: 5px;
+        padding: 0;
+        font-size: 4vw; 
+    }
+
+    .container_world_text {
+        color: white;
+        font-size: 25px;
+    }
+
+    .footer_socials {
+         font-size: 12px;
+    }
+
+    * {
+        background-color: black;
+        color: white;
+    }
+    
+    footer{
+        background-color: black;
+        color: white;
+    }
+
+    nav li:hover{
+        transition: all 0.2s linear;
+        background-color: teal;
+         box-shadow:rgba(0,0,0,0.8) 0px 5px 5px, inset rgba(0,0,0,0.15) 0px -10px 20px; 
+         cursor: pointer; 
+    }
+
+    table{
+        font-size: 0.6em;
+        font-weight: 100;
+    }
+
+    a{
+        color:white;
+    }
+
+    .menu{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 80px;
+        margin-right: 5%;
+        font-size: 1em; 
+    }
+
+    h1 {
+    display:flex;
+    font-size: 3em;
+    margin :100px;
+    text-align: center;
+    }
+
+    div.menu{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 1em;
+        border: 2px solid black; 
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .biography .text_and_image_left img{
+        float: none;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .navbar_ul img {
+        display: none;
+    }
+
+    .arrowimg {
+        display: none;
+    }
+    
+    .back_to_top:hover{
+        color: black;
+    }
+}
